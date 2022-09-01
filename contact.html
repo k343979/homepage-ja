@@ -69,7 +69,67 @@
     </header>
 
     <!-- main -->
-    <main class="container-fluid">
+    <main id="contact" class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-11">
+                <h2 class="py-4 text-center ff-mpr fs-1">お問い合わせ</h2>
+                <p class="text-center text-primary ff-mpr fs-6"><i class="fas fa-check"></i> 通常1日以内にご返信させて頂きます</p>
+                <!-- 簡易説明ブロック -->
+                <div class="alert alert-info" role="alert">
+                    <p class="mb-0 ff-mpr fs-6">ご関心を寄せていただきありがとうございます。</p>
+                    <p class="mb-0 ff-mpr fs-6">以下の点にご留意のうえ、下記のフォームに入力し送信してください。</p>
+                    <br />
+                    <p class="mb-0 ff-mpr fs-6">・ご入力頂いた情報は、当目的以外のことでは利用致しません。</p>
+                    <p class="mb-0 ff-mpr fs-6">・入力内容をご確認のうえ、送信してください。</p>
+                    <p class="mb-0 ff-mpr fs-6">・下記のフォームが送信できない場合、 "gucciyanen04@gmail.com" までご連絡ください。</p>
+                    <br />
+                    <p class="mb-0 ff-mpr fs-6">上記内容をご確認のうえ、お気軽にお問い合わせください。</p>
+                </div>
+                <!-- フォーム -->
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-6 py-2">
+                        <label for="contact-last-name" class="form-label ff-mpr required">姓</label>
+                        <input type="text" class="form-control" id="contact-last-name" required />
+                        <small class="ff-mpr error-msg-color contact-last-name"></small>
+                    </div>
+                    <div class="col-md-6 py-2">
+                        <label for="contact-first-name" class="form-label ff-mpr required">名</label>
+                        <input type="text" class="form-control" id="contact-first-name" required />
+                        <small class="ff-mpr error-msg-color contact-first-name"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-email" class="form-label ff-mpr required">メールアドレス</label>
+                        <input type="email" class="form-control" id="contact-email" required />
+                        <small class="ff-mpr error-msg-color contact-email"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-company-name" class="form-label ff-mpr">法人名</label>
+                        <input type="text" class="form-control" id="contact-company-name" />
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-reason" class="form-label ff-mpr required">お問い合わせ内容</label>
+                        <select class="form-select" id="contact-reason" aria-label=".form-select" required>
+                            <option value="0" selected>選択してください</option>
+                            <option value="1">案件のご依頼／ご相談</option>
+                            <option value="2">リファラル転職のご相談</option>
+                            <option value="3">開発チームへ参加のご依頼</option>
+                            <option value="4">その他</option>
+                        </select>
+                        <small class="ff-mpr error-msg-color contact-reason"></small>
+                    </div>
+                    <div class="py-2">
+                        <label for="contact-detail" class="form-label ff-mpr required">お問い合わせ詳細</label>
+                        <textarea rows="10" class="form-control" id="contact-detail" required></textarea>
+                        <small class="ff-mpr" id="detail-count">0/1000</small>
+                        <br />
+                        <small class="ff-mpr error-msg-color contact-detail"></small>
+                    </div>
+                    <div class="d-grid gap-2 py-3">
+                        <button type="submit" class="btn btn-info" id="contactSubmit" value="lang=ja">送信</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- ソーシャルアイコンの固定バー -->
@@ -86,7 +146,7 @@
 
     <!-- footer -->
     <footer>
-        <div class="row align-items-center">
+        <div class="row align-items-center py-3">
             <div class="col-12 text-center">
                 <script>document.write(new Date().getFullYear());</script>
             </div>
