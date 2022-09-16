@@ -34,7 +34,7 @@
     </div>
 
     <!-- ヘッダー -->
-    <header id="header" class="container-fluid header-zindex">
+    <header id="header" class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -45,7 +45,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse position-relative" id="hamburgerContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 position-absolute end-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 position-absolute end-0 header-zindex">
                         <a class="nav-link stretch-underline-anime" href="profile.html">
                             <li class="nav-item px-3 ff-nsj">自己紹介</li>
                         </a>
@@ -70,6 +70,97 @@
 
     <!-- main -->
     <main id="achievement" class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8 col-11">
+                <h2 class="py-4 text-center ff-mpr fs-1">過去の実績</h2>
+                <!-- ダウンロードブロック -->
+                <div class="py-3">
+                    <div class="d-flex justify-content-end">
+                        <a href="../storage/skill_sheet.xlsx.zip" download="skill_sheet.xlsx.zip">
+                            <button type="button" class="btn btn-info" id="SkillDownload">
+                                <i class="fas fa-download"></i>
+                                スキルシートをダウンロード
+                            </button>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <small class="mb-0 py-2 ff-mpr fs-6">注: 2022年9月時点</small>
+                    </div>
+                </div>
+                <!-- 実績カード -->
+                <div class="card my-3">
+                    <div class="card-header ff-mpr">
+                        案件マッチングサイトの開発
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ff-mpr">Webサービスの新規開発</h5>
+                        <small class="card-text ff-mpr">所属：フリーランス</small>
+                        <div class="py-2">
+                            <span class="badge bg-success">Vue.js</span>
+                            <span class="badge bg-danger">Laravel</span>
+                        </div>
+                        <div class="py-2">
+                            <p class="card-text mb-0 ff-mpr">企業の案件とスキルをもつ個人をマッチングするサービスを開発しました。</p>
+                            <p class="card-text mb-0 ff-mpr">マーケティング担当とデザイナーとCTOの計4人でチームを作り、全くの0の状態からのスタートし、どんなサービスにしたいかを話し合い、進めていきました。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header ff-mpr">
+                        MAツール (SaaS) の開発
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ff-mpr">MAツールの保守・運用</h5>
+                        <small class="card-text ff-mpr">所属：正社員</small>
+                        <div class="py-2">
+                            <span class="badge bg-info">Golang</span>
+                            <span class="badge bg-success">Vue.js</span>
+                            <span class="badge bg-danger">Laravel</span>
+                            <span class="badge bg-primary">Docker</span>
+                        </div>
+                        <div class="py-2">
+                            <p class="card-text mb-0 ff-mpr">企業の運営するMAツール (SaaS) の保守・運用をしています。</p>
+                            <p class="card-text mb-0 ff-mpr">リファクタリングや追加機能の開発、不具合の改修およびテスト自動化などの対応をしています。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header ff-mpr">
+                        ボイラープレートの開発
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ff-mpr">ボイラープレートの新規開発</h5>
+                        <small class="card-text ff-mpr">所属：個人開発</small>
+                        <div class="py-2">
+                            <span class="badge bg-info">Golang</span>
+                            <span class="badge bg-primary">Docker</span>
+                        </div>
+                        <div class="py-2">
+                            <p class="card-text mb-0 ff-mpr">現在開発中...</p>
+                            <p class="card-text mb-0 ff-mpr">サービスやアプリにおいて必要になる機能を、複数の個人開発アプリに使い回せるような基本テンプレートを開発しています。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header ff-mpr">
+                        タスク管理Webアプリ
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ff-mpr">タスク管理の開発</h5>
+                        <small class="card-text ff-mpr">所属：個人開発</small>
+                        <div class="py-2">
+                            <span class="badge bg-success">Vue.js</span>
+                            <span class="badge bg-info">Golang(+Gin)</span>
+                            <span class="badge bg-primary">Docker</span>
+                        </div>
+                        <div class="py-2">
+                            <p class="card-text mb-0 ff-mpr">現在開発中...</p>
+                            <p class="card-text mb-0 ff-mpr">本業・副業に加え、プライベートまで自身の予定を管理する際に、場合によって様々なツールを利用しているため、管理が煩雑で把握しづらいこともあり、一括で管理できるように開発中です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- ソーシャルアイコンの固定バー -->
